@@ -1,0 +1,91 @@
+ody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #fdfdfd;
+}
+
+.player-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.2), 
+                rgba(0,0,0,0.2)),
+                url('https://i.ytimg.com/vi/EosVz0OF90U/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGsgMSh_MA8=&rs=AOn4CLA6o-FR2zZdPYfQKkkflVPfJFG5rw') center/cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* El resto del CSS se mantiene IGUAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #373838;
+}
+
+.audio-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #792d83;
+    color: rgb(248, 244, 247);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #f58ef5bb;
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #1aa1b3;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #1414c2;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.playlist {
+    margin-top: 20px;
+}
+
+.playlist-item {
+    padding: 10px;
+    border-bottom: 1px solid #84b635;
+    cursor: pointer;
+}
+
+.playlist-item:hover {
+    background: #7a3a8d;
+}
+
+input[type="range"] {
+    width: 100px;
+}
+
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+    }
+}
