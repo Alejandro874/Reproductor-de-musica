@@ -1,0 +1,30 @@
+/* LOS CSS NO FUNCIONAN */
+
+a {
+    cursor: pointer !important;
+}
+
+.dropdown-toggle:not(:focus) {
+    outline: 0;
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-brand img {
+    vertical-align: middle;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    left: auto;
+    z-index: 1000;
+    display: none;
+    margin-top: .125rem;
+}
+.dropdown-menu.show {
+    display: block;
+}
